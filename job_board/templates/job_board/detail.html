@@ -1,0 +1,13 @@
+
+{% load humanize %}
+
+<html>
+    <ul>
+        <li>{{ posting.title|title }}</li>
+        <li>{{ posting.company }}</li>
+        <li>Active Status: {{ posting.is_active }}</li>
+        <li>${{ posting.salary|intcomma }}</li>
+        <hr>
+        <li>{{ posting.description }}</li>
+    </ul>
+</html>
